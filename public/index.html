@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem e Turismo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/logoViagemETurismo.png"
+                alt="Logo Viagem e Turismo"></a>
+    </header>
+    <main>
+        <section class="carrosel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/torreEiffel1.jpg" class="d-block w-100"
+                            alt="Torre Eiffel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/tajMahal1.webp" class="d-block w-100" alt="Taj Mahal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/piramidesEgito1.webp" class="d-block w-100"
+                            alt="Piramides do Egito">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+
+
+<section class="cards">
+    <h2 class="text-center mb-4">Destinos Populares</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+</section>
+
+
+            <section class="container mt-5" id="formulario-lugar">
+    <h2 class="mb-3">Adicionar Novo Destino</h2>
+    <form id="form-novo-lugar">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="form-nome" class="form-label">Nome do Lugar</label>
+                    <input type="text" class="form-control" id="form-nome" placeholder="Ex: Roma" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-pais" class="form-label">País</label>
+                    <input type="text" class="form-control" id="form-pais" placeholder="Ex: Itália" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-imagem" class="form-label">URL da Imagem Principal</label>
+                    <input type="url" class="form-control" id="form-imagem" placeholder="https://..." required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="form-descricao" class="form-label">Descrição (para o card)</label>
+                    <textarea class="form-control" id="form-descricao" rows="2" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="form-conteudo" class="form-label">Conteúdo (para a página de detalhes)</label>
+                    <textarea class="form-control" id="form-conteudo" rows="4" required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col-md-6">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="form-destaque">
+                    <label class="form-check-label" for="form-destaque">Marcar como Destaque</label>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <button type="submit" class="btn btn-primary w-100 w-md-auto">Adicionar Lugar</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+    </main>
+    <footer>
+        <section class="sobre">
+            <h3>Sobre</h3>
+            <p>Olá! Meu nome é Rafael Galileu Thales Oliveira, tenho 20 anos e atualmente estou cursando Engenharia de
+                Software na PUC Minas.</p>
+        </section>
+
+        <section class="autoria">
+            <h3>Autoria</h3>
+            <article class="informacoes">
+                <img src="assets/img/perfil.jpeg" alt="Foto de perfil">
+                <p><strong>Aluno:</strong> Rafael Galileu Thales Oliveira<br>
+                    <strong>Curso:</strong> Engenharia de Software<br>
+                    <strong>Turma:</strong> Noite
+                </p>    
+            </article>
+            <article class="redes">
+                <p>Redes Sociais</p>
+                <a href="https://www.instagram.com/rafael.galileu?utm_source=qr&igsh=MTYycGtocjF5eHJiMg=="><img
+                        src="assets/img/instagram.png" alt="ícone instagram"></a>
+                <a href="https://github.com/RafaelGalileu"><img src="assets/img/github.png"
+                        alt="ícone GitHub"></a>
+            </article>
+        </section>
+
+    </footer>
+
+    <div class="modal fade" id="modal-editar" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEditarLabel">Editar Destino</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-editar-lugar">
+                    <input type="hidden" id="edit-form-id">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="edit-form-nome" class="form-label">Nome do Lugar</label>
+                                <input type="text" class="form-control" id="edit-form-nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit-form-pais" class="form-label">País</label>
+                                <input type="text" class="form-control" id="edit-form-pais" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit-form-imagem" class="form-label">URL da Imagem Principal</label>
+                                <input type="url" class="form-control" id="edit-form-imagem" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="edit-form-descricao" class="form-label">Descrição (para o card)</label>
+                                <textarea class="form-control" id="edit-form-descricao" rows="2" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit-form-conteudo" class="form-label">Conteúdo (para a página de detalhes)</label>
+                                <textarea class="form-control" id="edit-form-conteudo" rows="4" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="edit-form-destaque">
+                        <label class="form-check-label" for="edit-form-destaque">Marcar como Destaque</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" form="form-editar-lugar">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="assets/scripts/app.js"></script>
+</body>
+
+</html>

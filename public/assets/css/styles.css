@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+header img{
+    width: 350px;
+    text-align: center;
+}
+header{
+    background-color: rgb(3, 70, 136);
+}
+.carrosel{
+    padding: 80px 250px;
+
+    
+}
+.carrosel img{
+    border-radius: 15px;
+    
+}
+.cards{
+    padding: 0 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+    border-bottom: solid black 1px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    border-top: solid black 1px;
+    padding: 50px 20px;
+    margin-top: 80px;
+}
+
+.autoria{
+    display: block;
+    padding: 0 40px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 25px;
+}
+.redes img{
+    width: 30px;
+    margin-right: 8px;
+}
+.informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informacoes img{
+    width: 95px;
+}
+.autoria p{
+    padding: 0 30px;
+}
+h3{
+    margin-bottom: 40px;
+}
+.redes p{
+    font-weight: bold;
+}
+
+#formulario-lugar{
+    margin-bottom: 65px;
+}
