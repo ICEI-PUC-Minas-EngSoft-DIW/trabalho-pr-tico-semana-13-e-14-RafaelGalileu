@@ -9,14 +9,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Rafael Galileu Thales oliveira
+- Matricula: 904480
+- Proposta de projeto escolhida: Viagem e Turismo
+- Breve descrição sobre seu projeto: O projeto é um portal de 'Viagem & Turismo' que destaca destinos populares, fornecendo aos usuários descrições detalhadas sobre cada local e uma lista de seus principais atrativos.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Nesta etapa, criei uma nova página grafico.html que usa a biblioteca Chart.js. Esta página busca dinamicamente os dados da API (db.json) e gera um gráfico de pizza que mostra a distribuição de destinos por país, refletindo as mudanças feitas pelo CRUD.
 
 ![Gráfico 1](/public/assets/img/grafico1.png)
 
