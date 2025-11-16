@@ -148,18 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
             descricao: document.getElementById('edit-form-descricao').value,
             conteudo: document.getElementById('edit-form-conteudo').value,
             destaque: document.getElementById('edit-form-destaque').checked,
-            // NOTA: Este PUT vai sobrescrever as atrações. 
-            // Uma lógica de PATCH ou GET/Merge seria necessária para mantê-las.
-            // Para este exercício, assumimos que as atrações são gerenciadas em outro lugar
-            // ou que estamos ok em resetá-las se o 'db.json' não as mantiver.
-            // Vamos buscar as atrações atuais para não perdê-las.
         };
         
-        // Pequena lógica para não perder as atrações existentes no PUT
+
         fetch(`${apiURL}/${lugarId}`)
             .then(res => res.json())
             .then(lugarExistente => {
-                lugarAtualizado.atracoes = lugarExistente.atracoes; // Mantém as atrações antigas
+                lugarAtualizado.atracoes = lugarExistente.atracoes;
 
                 return fetch(`${apiURL}/${lugarId}`, {
                     method: 'PUT',

@@ -4,44 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagem e Turismo - Detalhes</title>
+    <title>Viagem e Turismo - Gráfico</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
     <header>
-    <a href="index.html"><img src="assets/img/logoViagemETurismo.png"
-            alt="Logo Viagem e Turismo"></a>
-    <nav>
-        <a href="index.html" class="nav-link">Início</a>
-        <a href="grafico.html" class="nav-link">Gráfico</a>
-    </nav>
-</header>
+        <a href="index.html"><img src="assets/img/logoViagemETurismo.png"
+                alt="Logo Viagem e Turismo"></a>
+        <nav>
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="grafico.html" class="nav-link">Gráfico</a>
+        </nav>
+    </header>
     
     <main class="container mt-5">
-        <section class="titulo-detalhe mb-4">
-            <h1 id="detalhe-titulo"></h1> </section>
-
-        <section class="informacoesGerais row mb-5">
-            <div class="col-md-6">
-                <img id="detalhe-imagem-principal" src="" alt="" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6">
-                <p id="detalhe-conteudo" style="font-size: 1.1rem;"></p>
-            </div>
+        <section class="text-center mb-4">
+            <h1>Relatório de Destinos</h1>
+            <p>Este gráfico mostra a distribuição de destinos cadastrados por país.</p>
         </section>
 
-        <section class="atracoes">
-            <h2 class="mb-4">Principais Atrações</h2>
-            <div id="detalhe-atracoes-container" class="row row-cols-1 row-cols-md-2 g-4">
-                </div>
+        <section class="grafico-container" style="max-width: 700px; margin: auto;">
+            <canvas id="graficoDestinos"></canvas>
         </section>
     </main>
 
@@ -51,11 +41,10 @@
             <p>Olá! Meu nome é Rafael Galileu Thales Oliveira, tenho 20 anos e atualmente estou cursando Engenharia de
                 Software na PUC Minas.</p>
         </section>
-
         <section class="autoria">
             <h3>Autoria</h3>
             <article class="informacoes">
-                 <img src="assets/img/perfil.jpeg" alt="Foto de perfil">
+                <img src="assets/img/perfil.jpeg" alt="Foto de perfil">
                 <p><strong>Aluno:</strong> Rafael Galileu Thales Oliveira<br>
                     <strong>Curso:</strong> Engenharia de Software<br>
                     <strong>Turma:</strong> Noite
@@ -63,7 +52,7 @@
             </article>
             <article class="redes">
                 <p>Redes Sociais</p>
-                 <a href="https://www.instagram.com/rafael.galileu?utm_source=qr&igsh=MTYycGtocjF5eHJiMg=="><img
+                <a href="https://www.instagram.com/rafael.galileu?utm_source=qr&igsh=MTYycGtocjF5eHJiMg=="><img
                         src="assets/img/instagram.png" alt="ícone instagram"></a>
                 <a href="https://github.com/RafaelGalileu"><img src="assets/img/github.png"
                         alt="ícone GitHub"></a>
@@ -71,7 +60,6 @@
         </section>
     </footer>
 
-    <script src="assets/scripts/detalhes.js"></script>
+    <script src="assets/scripts/grafico.js"></script>
 </body>
-
 </html>

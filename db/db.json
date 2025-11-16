@@ -118,6 +118,16 @@
           "imagem": "assets/img/Duomo di Pisa.jpg"
         }
       ]
+    },
+    {
+      "nome": "Roma",
+      "pais": "Itália",
+      "imagem_pincipal": "https://planetscafe.com/wp-content/uploads/2020/09/roma0.jpg",
+      "descricao": "A capital italiana.",
+      "conteudo": "Conteúdo sobre Roma.",
+      "destaque": false,
+      "atracoes": [],
+      "id": 6
     }
   ]
 }
